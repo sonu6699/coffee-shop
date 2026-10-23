@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover delicious coffee and coffee stories at Brewlogue.">
+  <title>Brewlogue | Coffee Shop</title>
+  <link rel="icon" href="removebg.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Brewlogue home">
+      <img src="removebg.png" alt="Brewlogue logo" width="100">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mainNav">
+      <img src="menu.png" alt="" width="30" height="30">
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#top">HOME</a>
+      <a href="#offers">PAGES</a>
+      <a href="#herald">PORTFOLIO</a>
+      <a href="#herald">BLOG</a>
+      <a href="#offers">SHOP</a>
+      <a href="#stats">ELEMENTS</a>
+      <button class="icon-button" id="cartButton" type="button" aria-label="Shopping cart">
+        <img src="cart.png" alt="" width="30" height="30">
+      </button>
+      <button class="icon-button" id="searchButton" type="button" aria-label="Search this page">
+        <img src="search.png" alt="" width="30" height="30">
+      </button>
+    </nav>
+  </header>
+
+  <form class="search-panel" id="searchPanel" role="search" hidden>
+    <label for="siteSearch">Search this page</label>
+    <div class="search-row">
+      <input id="siteSearch" type="search" placeholder="Try “coffee” or “French Press”">
+      <button type="submit">Find</button>
+      <button type="button" class="search-close" id="searchClose" aria-label="Close search">×</button>
+    </div>
+    <p id="searchMessage" aria-live="polite"></p>
+  </form>
+
+  <main>
+    <section class="hero" aria-label="Brewlogue coffee shop">
+      <div class="hero-content">
+        <h1>BREWLOGUE</h1>
+        <img class="hero-separator" src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/slider-separator-img.png" alt="">
+      </div>
+    </section>
+
+    <section class="offers section-pad" id="offers">
+      <h2>Our Delicious Offer</h2>
+      <img class="title-separator" src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png" alt="">
+      <p class="section-intro">Enjoy Brewlogue’s exclusive coffee offer! Savor rich, aromatic brews with a special discount today.</p>
+    </section>
+
+    <section class="features section-pad" aria-label="Coffee services">
+      <article class="feature">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-5.png" alt="" loading="lazy">
+        <h3><a href="#herald">TYPES OF COFFEE</a></h3>
+        <p>Espresso, Americano, Latte, Cappuccino, Macchiato, Mocha, Flat White, Ristretto, Cortado, and Affogato.</p>
+      </article>
+      <article class="feature">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-6.png" alt="" loading="lazy">
+        <h3><a href="#herald">BEAN VARIETIES</a></h3>
+        <p>Discover coffee beans and flavours for your favourite cup, from smooth and mellow to bold and rich.</p>
+      </article>
+      <article class="feature">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-7.png" alt="" loading="lazy">
+        <h3><a href="#herald">COFFEE &amp; PASTRY</a></h3>
+        <p>Pair your coffee with croissants, muffins, scones, biscotti, macarons, and fresh pastries.</p>
+      </article>
+      <article class="feature">
+        <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h2-custom-icon-8.png" alt="" loading="lazy">
+        <h3><a href="#herald">COFFEE TO GO</a></h3>
+        <p>Freshly brewed coffee, crafted fast — your perfect cup to go.</p>
+      </article>
+    </section>
+
+    <section class="herald" id="herald">
+      <div class="herald-heading">
+        <h2>The Coffee Herald</h2>
+        <img class="title-separator" src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/title-separator.png" alt="">
+        <p>The Coffee Herald brings stories, craft, and creativity together in every cup.</p>
+      </div>
+      <div class="story-grid">
+        <article class="story-card">
+          <img src="coffee-1.jpg" alt="Coffee preparation" loading="lazy">
+          <h3>Prep Techniques</h3>
+          <p>Explore the little details that turn freshly ground beans and hot water into a memorable cup of coffee.</p>
+          <a class="read-more" href="#stats">READ MORE</a>
+        </article>
+        <article class="story-card">
+          <img src="man.jpg" alt="Coffee brewing" loading="lazy">
+          <h3>French Press</h3>
+          <p>A classic brewing method that brings out a full-bodied flavour and a rich, satisfying aroma.</p>
+          <a class="read-more" href="#stats">READ MORE</a>
+        </article>
+        <article class="story-card">
+          <img src="coffee.jpg" alt="Traditional coffee" loading="lazy">
+          <h3>Turkish Ibrik</h3>
+          <p>Discover the tradition of finely ground coffee brewed slowly for a distinctive, bold taste.</p>
+          <a class="read-more" href="#stats">READ MORE</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="coffee-banner" aria-label="Coffee illustration">
+      <img src="https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-single-img-1-250x226.png" alt="Coffee cup illustration" loading="lazy">
+    </section>
+
+    <section class="stats section-pad" id="stats">
+      <article><h2>420</h2><h3>Varieties of Coffee</h3><p>Explore a world of beans, blends, aromas, and flavour profiles.</p></article>
+      <article><h2>123</h2><h3>Hours of Testing</h3><p>Careful tasting and brewing help us celebrate a better cup.</p></article>
+      <article><h2>441</h2><h3>Coffee Markets</h3><p>Coffee culture connects growers, roasters, cafés, and coffee lovers.</p></article>
+      <article><h2>143</h2><h3>Coffee Brands</h3><p>Discover roasters and coffee makers from around the world.</p></article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="copyright">© <span id="currentYear"></span> Brewlogue</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#top">Home</a><a href="#offers">About</a><a href="#herald">Shop</a><a href="mailto:hello@brewlogue.example">Contact</a>
+    </nav>
+    <div class="social-links" aria-label="Social media">
+      <a href="#top" aria-label="Instagram"><img src="instagram.png" alt="" width="30" height="30"></a>
+      <a href="#top" aria-label="Facebook"><img src="facebook.png" alt="" width="30" height="30"></a>
+      <a href="#top" aria-label="Twitter"><img src="twitter.png" alt="" width="30" height="30"></a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
